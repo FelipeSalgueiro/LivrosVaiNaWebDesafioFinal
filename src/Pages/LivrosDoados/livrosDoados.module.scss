@@ -1,0 +1,83 @@
+.mainLivrosDoados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    h2 {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: 1.5rem;
+        color: black;
+    }
+}
+.listaLivros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+    width: 95vw;
+    margin-bottom: 2vh;
+    .cardLivro {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1vh;
+        align-items: center;
+        width: 20vw;
+        height: 45vh;
+        padding-top: 2vh;
+        border: solid #005695 2px;
+        border-radius: 15px;
+        img {
+            height: 26vh;
+            max-width: 15vw;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 1vh;
+            height: 30%;
+            text-align: center;
+            h3 {
+                font-size: 1.1rem;
+                color:black;
+            }
+            p {
+                font-size: 1rem;
+                color: black;
+            }
+        }
+    }
+    .telaLoading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        img {
+            width: 5vw;
+            margin-bottom: 2vh;
+        }
+        p {
+            color: black;
+            font-size: 1rem;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .listaLivros {
+        .cardLivro {
+            width: 40vw;
+            height: 30vh;
+            img {
+                height: 14vh;
+                max-width: 20vw;
+            }
+            div {
+                gap: 0.5vh;
+            }
+        }
+    }
+}
